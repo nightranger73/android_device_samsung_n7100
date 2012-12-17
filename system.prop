@@ -5,5 +5,52 @@
 dalvik.vm.dexopt-data-only=1
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0
-ro.sf.lcd_density=320
-ro.lcd_min_brightness=20
+ro.sf.lcd_density=264
+ro.lcd_min_brightness=10
+
+# Beginning of HyperDroidJBX tweaks
+#
+#Mods and Tweaks
+windowsmgr.max_events_per_sec=300
+wifi.supplicant_scan_interval=180
+hs.systemserver=16m
+hs.app.process=16m
+hs.su=8m
+hs.app_process=16m
+
+#Video / picture Quality
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.panorama.defres=3264x1840
+ro.media.panorama.frameres=1280x720
+
+#Render UI/2D with GPU
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=gpu
+hwui.blacklist=0
+persist.sys.ui.hw=1
+
+#Proximity sensor tweak
+ro.telephony.call_ring.delay = 0
+ro.lge.proximity.delay=15
+mot.proximity.delay=15
+
+#Disable checkin services, error reporting and logging
+ro.config.nocheckin=1
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+
+#Enable Hardware Rendering
+video.accelerate.hw=1
+debug.performance.tuning=1
+
+#Save Battery Power Tweak
+ro.ril.disable.power.collapse=0
+pm.sleep_mode=1
+
+#
+# End of HyperDroidJBX tweaks
+
